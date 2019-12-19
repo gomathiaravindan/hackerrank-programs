@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+    float meal,tip1,tax1,tip,tax;
+     float total;
+     int totalcost;
+    scanf("%f\n%f\n%f",&meal,&tip,&tax);
+    tip1=meal * (tip/100);
+    tax1=meal * (tax/100);
+    total=meal+tip1+tax1;
+    totalcost=round(total);
+    printf("%d",totalcost);
+}
