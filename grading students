@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int arr[100000],n,i,quo,og,diff;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d\n",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+           quo=arr[i]/5;
+           diff=((quo+1)*5)-arr[i];
+           if(diff<3)
+           {
+             og=(quo+1)*5;
+             if(og>=40)
+             {
+                printf("%d\n",og);
+             }
+             else if(og<40)
+                 printf("%d\n",arr[i]);
+           }
+          else if(diff>=3)
+        {
+            
+            printf("%d\n",arr[i]);
+        }
+         
+    }
+    
+}
