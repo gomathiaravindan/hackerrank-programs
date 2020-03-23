@@ -1,0 +1,33 @@
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    int c,n,m,quo,t,i,quo1,count=0;
+    scanf("%d\n",&t);
+    for(i=0;i<t;i++)
+    {
+        quo=0,count=0;
+        scanf("%d %d %d",&n,&c,&m);
+        quo=n/c;
+        count=quo;
+    
+         
+            while(quo>=m)
+            {
+               quo-=m;
+               count++;
+               quo++;
+        }
+        printf("%d\n",count);
+         
+    }
+}
+
