@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int n,a,i,t,sum=1,j,hei=1;
+    scanf("%d",&t);
+    for(i=0;i<t;i++)
+    {
+        scanf("%d",&n);
+        hei=1;
+        for(j=1;j<=n;j++)
+        {
+            
+             if(j%2!=0)
+            {
+               hei= hei*2;
+            }
+            else if(j%2==0)
+            {
+               hei= hei+1;
+            }
+             
+        }
+        printf("%d\n",hei);
+    }
+}
